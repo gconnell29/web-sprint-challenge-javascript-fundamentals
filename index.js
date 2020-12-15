@@ -156,10 +156,10 @@ function greeting(first, last){
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
  Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
 */
-function CuboidMaker(length, width, height) {
-  this.length = length;
-  this.width = width;
-  this.height = height;
+function CuboidMaker(sides) {
+  this.length = sides.length;
+  this.width = sides.width;
+  this.height = sides.height;
 }
 
 
@@ -198,10 +198,10 @@ console.log(cuboid.surfaceArea()); // 130
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo {
-  constructor(length, width, height) {
-    this.length = length;
-    this.width = width;
-    this.height = height;
+  constructor(sides) {
+    this.length = sides.length;
+    this.width = sides.width;
+    this.height = sides.height;
   }
   volume() {
     return this.length*this.width*this.height;
